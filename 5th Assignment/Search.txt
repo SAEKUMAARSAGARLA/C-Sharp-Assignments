@@ -1,0 +1,39 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace _5th__Assignment
+{
+    internal class Search
+    {
+        static void Main()
+        {
+            List<string> list = new List<string>();
+            list.Add("hari babu");
+            list.Add("prasanna");
+            list.Add("vasu");
+            list.Add("kiran kumar");
+            for (int i = 0; i < list.Count; i++)
+            {
+                Console.WriteLine("List of employees" + ':' + list[i]);
+            }
+            Console.WriteLine("total number of employess" + ':' + list.Count);
+            Console.WriteLine("enter person name:");
+            string X = Console.ReadLine();
+            if (list.Contains(X))
+            {
+                Console.WriteLine("yes " + X + " is an employee");
+            }
+            else
+            {
+                Console.WriteLine("no");
+            }
+
+
+
+            Console.ReadLine();
+        }
+    }
+}
